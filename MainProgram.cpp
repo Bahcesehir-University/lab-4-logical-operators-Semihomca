@@ -39,10 +39,14 @@ void section1_warmup() {
     // TODO: Declare two int variables (a and b)
 
     // TODO: Prompt the user and read both values with cin
-
+int a , b;
     // TODO: Print "Sum = " followed by the result
 
-    cout << endl;
+    cout << "Enter two integers:";
+    
+    cin >>a >> b;
+    
+    cout << "sum is "<< a + b << endl;
 
     // -----------------------------------------------------------------------
     // Exercise 1.2
@@ -52,11 +56,13 @@ void section1_warmup() {
     // -----------------------------------------------------------------------
 
     // TODO: Declare a double variable for Celsius
-
+double celsius;
     // TODO: Prompt and read the value
-
+cout << "Enter temperature in celcius";
     // TODO: Calculate Fahrenheit and print it
-
+cin >> celsius;
+double fahrenheit = celsius * 9.0 / 5.0 + 32.0;
+cout << celsius <<" C = " << fahrenheit << " F " << endl;
     cout << endl;
 }
 
@@ -118,11 +124,20 @@ void section2_coreConcepts() {
     // TODO: Declare an int variable
 
     // TODO: Prompt and read it
-
+int num;
     // TODO: Use if / else if / else to print the correct message
 
-    cout << endl;
+    cout << "Enter an integer:" << endl;
+cin >> num;
+if (num > 0){
+cout << num << "is positive";}
 
+else if (num<0){
+    cout <<num << "is negative";
+}
+else {
+    cout << num <<"is 0";
+}
     // -----------------------------------------------------------------------
     // Exercise 2.2
     // Ask the user for two integers. Using ONLY relational operators and
@@ -131,7 +146,17 @@ void section2_coreConcepts() {
     //   "First is bigger"  if the first is larger
     //   "Second is bigger" otherwise
     // -----------------------------------------------------------------------
+int x , y ;
+cout <<  "enter two integers";
+cin>> x >> y ;
 
+if (x == y){
+    cout << "Equal" << endl;
+} else if (x>y){
+    cout << "First is larger" << endl;
+} else{
+    cout << "Second is larger" << endl;
+}
     // TODO: Declare two ints, prompt, and read them
 
     // TODO: Write the if / else if / else chain
@@ -153,6 +178,14 @@ void section3_guidedExercises() {
     // Hint: use the modulus operator (%).
     //   number % 2 == 0  means even.
     // -----------------------------------------------------------------------
+int num ;
+cout << "enter an integer";
+cin >> num;
+if (num %2 == 0){
+    cout << num << "is even" << endl;
+}else{
+    cout << num << "is odd" << endl;
+}
 
     // TODO: Implement the even/odd checker
 
@@ -170,6 +203,26 @@ void section3_guidedExercises() {
     //
     // Also print "Invalid score" if the input is < 0 or > 100.
     // -----------------------------------------------------------------------
+int x ;
+cout <<"enter a number";
+cin >> num;
+if (num <0 || num >100){
+    cout << "Invalid Score";
+}else if (num >=90){
+    cout << "grade A";
+}
+else if (num >=80){
+    cout << "grade B";
+}
+else if (num >=70){
+    cout << "grade C";
+}
+else if (num >=60){
+    cout << "grade D";
+}
+else if (num >=0){
+    cout << "grade F";
+}
 
     // TODO: Implement the grade calculator
 
@@ -185,7 +238,14 @@ void section3_guidedExercises() {
     // Print whether it is a leap year or not.
     // Hint: you will need both && and || in one condition.
     // -----------------------------------------------------------------------
-
+int year ;
+cout <<"enter a yearr";
+cin >> year;
+if ((year %4 == 0 && year %100 != 0) || (year % 400 ==0)){
+    cout << year << "is leap year" << endl;
+}else{
+    cout << year << "is not a leap year" <<endl;
+}
     // TODO: Implement the leap year checker
 
     cout << endl;
@@ -207,6 +267,10 @@ void section3_guidedExercises() {
     // -----------------------------------------------------------------------
 
     // TODO: Implement the triangle validator and classifier
+double s1 , s2 , s3;
+cout << "enter three sight lenghts:"<< endl;
+cin >> s1 >> s1 >> s3;
+if (s1+ s2 > s3 && s1 + s3 > s2&& s2 ==)
 
     cout << endl;
 
